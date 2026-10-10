@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vedora — Flowers that stay. Feelings that bloom.</title>
+  <meta name="description" content="Independent floral design studio crafting everlasting pipe-cleaner bouquets, personalized flower gifts, and cute handmade keychains." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>SMALL BLOOMS. BIG FEELINGS. MADE BY HAND.</span>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header id="site-header">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-name">Vedora</span>
+        <span class="brand-tag">Floral Studio</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#collection" class="nav-link">Collection</a>
+        <a href="#categories" class="nav-link">Bouquets</a>
+        <a href="#fotm" class="nav-link">Featured</a>
+        <a href="#about" class="nav-link">Our Story</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#collection" class="btn btn-sm btn-primary">Shop Bouquets</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">Handcrafted Floral Artistry</span>
+        <h1 class="hero-title">
+          Flowers that <em>stay</em>.<br />
+          Feelings that <em>bloom</em>.
+        </h1>
+        <p class="hero-desc">
+          Not your usual flowers. Little handmade blooms crafted stem by stem with velvety chenille wire, thoughtfully arranged to make ordinary moments feel extraordinary.
+        </p>
+        <div class="hero-buttons">
+          <a href="#collection" class="btn btn-primary">Explore The Collection</a>
+          <a href="#about" class="hero-link">Our Studio Story →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Handcrafted</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">Everlasting</span>
+            <span class="stat-label">Never Wilts</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">₹199+</span>
+            <span class="stat-label">Starting Price</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-card">
+          <img src="https://lively-bunny-a1bd05.netlify.app/images/hero/hero-bouquets-flatlay.png" alt="Handcrafted pipe-cleaner flower bouquets flatlay" />
+          <div class="hero-badge">
+            <span>✨ Crafted stem by stem with fuzzy chenille wire</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curated Categories -->
+  <section class="categories-section" id="categories">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="eyebrow">Curated Collections</span>
+        <h2>A little something for every kind of love.</h2>
+        <p class="section-sub">From a tiny desk-side surprise to a grand bouquet that says everything you can't quite put into words.</p>
+      </div>
+
+      <div class="categories-grid">
+        <div class="category-card" onclick="filterCategory('small')">
+          <div class="category-image">
+            <img src="https://lively-bunny-a1bd05.netlify.app/images/small-bouquets/pink-daydream-small.png" alt="Small Bouquets" />
+          </div>
+          <div class="category-info">
+            <h3>Small Bouquets</h3>
+            <span class="category-link">Explore Sweet Accents →</span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('medium')">
+          <div class="category-image">
+            <img src="https://lively-bunny-a1bd05.netlify.app/images/medium-bouquets/lavender-haze-medium.png" alt="Medium Bouquets" />
+          </div>
+          <div class="category-info">
+            <h3>Medium Bouquets</h3>
+            <span class="category-link">Explore Arrangements →</span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('large')">
+          <div class="category-image">
+            <img src="https://lively-bunny-a1bd05.netlify.app/images/large-bouquets/golden-hour-large.png" alt="Large Bouquets" />
+          </div>
+          <div class="category-info">
+            <h3>Large Bouquets</h3>
+            <span class="category-link">Explore Grand Blooms →</span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="filterCategory('keychain')">
+          <div class="category-image">
+            <img src="https://lively-bunny-a1bd05.netlify.app/images/keychains/daisy-darling-keychain.png" alt="Cute Keychains" />
+          </div>
+          <div class="category-info">
+            <h3>Cute Keychains</h3>
+            <span class="category-link">Explore Daily Charms →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio Favourites / Products Collection Section -->
+  <section class="collection-section" id="collection">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="eyebrow">Studio Favourites</span>
+        <h2>Little favourites, made by hand.</h2>
+        <p class="section-sub">Each piece is created in small studio quantities with velvety chenille wire, bound by hand, and wrapped with heirloom papers.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Creations</button>
+        <button class="filter-btn" data-filter="small">Small Bouquets</button>
+        <button class="filter-btn" data-filter="medium">Medium Bouquets</button>
+        <button class="filter-btn" data-filter="large">Large Bouquets</button>
+        <button class="filter-btn" data-filter="keychain">Keychains</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="product-grid" id="productGrid">
+
+        <!-- Product 1 -->
+        <article class="product-card" data-category="small">
+          <div class="product-image-container">
+            <img src="https://lively-bunny-a1bd05.netlify.app/images/small-bouquets/pink-daydream-small.png" alt="Pink Daydream Small Bouquet" loading="lazy" />
+            <span class="badge-pill">Handmade favourite</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Small Bouquet</span>
+            <h3 class="product-title">Pink Daydream</h3>
+            <p class="product-desc">A little blush, a little whimsy, and a whole lot of heart.</p>
+            <div class="product-footer">
+              <span class="product-price">₹399</span>
+              <a href="#contact" class="product-btn">View Bouquet →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card" data-category="small">
+          <div class="product-image-container">
+            <img src="https://lively-bunny-a1bd05.netlify.app/images/small-bouquets/little-sunshine-small.png" alt="Little Sunshine Small Bouquet" loading="lazy" />
+            <span class="badge-pill">Handmade favourite</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Small Bouquet</span>
+            <h3 class="product-title">Little Sunshine</h3>
+            <p class="product-desc">Cheerful yellow blooms made to brighten a desk, a birthday, or somebody's Tuesday.</p>
+            <div class="product-footer">
+              <span class="product-price">₹499</span>
+              <a href="#contact" class="product-btn">View Bouquet →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card" data-category="medium">
+          <div class="product-image-container">
+            <img src="https://lively-bunny-a1bd05.netlify.app/images/medium-bouquets/lavender-haze-medium.png" alt="Lavender Haze Medium Bouquet" loading="lazy" />
+            <span class="badge-pill">Handmade favourite</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Medium Bouquet</span>
+            <h3 class="product-title">Lavender Haze</h3>
+            <p class="product-desc">Dreamy pastel bouquet with tulips, star lilies, delicate butterflies, and beaded ribbon.</p>
+            <div class="product-footer">
+              <span class="product-price">₹749</span>
+              <a href="#contact" class="product-btn">View Bouquet →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card" data-category="large">
+          <div class="product-image-container">
+            <img src="https://lively-bunny-a1bd05.netlify.app/images/large-bouquets/golden-hour-large.png" alt="Golden Hour Large Bouquet" loading="lazy" />
+            <span class="badge-pill">Handmade favourite</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Large Bouquet</span>
+            <h3 class="product-title">Golden Hour</h3>
+            <p class="product-desc">A lavish field of golden velvet tulips capturing the warm glow of late afternoon.</p>
+            <div class="product-footer">
+              <span class="product-price">₹999</span>
+              <a href="#contact" class="product-btn">View Bouquet →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card" data-category="large">
+          <div class="product-image-container">
+            <img src="https://lively-bunny-a1bd05.netlify.app/images/large-bouquets/forever-garden-large.png" alt="Forever Garden Large Bouquet" loading="lazy" />
+            <span class="badge-pill">Handmade favourite</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Large Bouquet</span>
+            <h3 class="product-title">Forever Garden</h3>
+            <p class="product-desc">A fuller handmade arrangement for the moments that deserve a little extra thought.</p>
+            <div class="product-footer">
+              <span class="product-price">₹1099</span>
+              <a href="#contact" class="product-btn">View Bouquet →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card" data-category="keychain">
+          <div class="product-image-container">
+            <img src="https://lively-bunny-a1bd05.netlify.app/images/keychains/daisy-darling-keychain.png" alt="Daisy Darling Keychain" loading="lazy" />
+            <span class="badge-pill">Handmade favourite</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Cute Keychain</span>
+            <h3 class="product-title">Daisy Darling</h3>
+            <p class="product-desc">A tiny handmade bloom to take along wherever the day goes.</p>
+            <div class="product-footer">
+              <span class="product-price">₹199</span>
+              <a href="#contact" class="product-btn">View Keychain →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Flower of the Month Spotlight -->
+  <section class="fotm-section" id="fotm">
+    <div class="container fotm-grid">
+      <div class="fotm-visual">
+        <div class="fotm-frame">
+          <img src="https://lively-bunny-a1bd05.netlify.app/images/small-bouquets/little-sunshine-small.png" alt="Little Sunshine Bouquet spotlight" />
+        </div>
+      </div>
+      <div class="fotm-text">
+        <span class="eyebrow eyebrow-light">THE FLOWER OF THE MONTH</span>
+        <h2 class="fotm-title">A little piece of sunshine.</h2>
+        <div class="fotm-sub">Botanical Note: Helianthus annuus (Sculpted Chenille Edition)</div>
+        <p class="fotm-desc">
+          Sunflowers have long been associated with warmth, optimism, and turning towards the light. This month, we're celebrating the kind of happiness that arrives quietly and stays with you. Crafted with deep chocolate velvet centers and vibrant golden chenille petals that will never wilt.
+        </p>
+        <blockquote class="fotm-quote">
+          "When making a chenille sunflower, the real secret is the spiraled center — tightening the fuzzy stem until it holds that rich, honeycombed texture found in real garden giants."
+        </blockquote>
+        <div class="fotm-cta-box">
+          <div>
+            <div class="fotm-prod-name">Little Sunshine Bouquet</div>
+            <div class="fotm-price-tag">Studio Price: <span class="fotm-price">₹499</span></div>
+          </div>
+          <a href="#contact" class="btn btn-gold">Order This Bouquet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio Craft & Philosophy -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-img-frame">
+          <img src="https://lively-bunny-a1bd05.netlify.app/images/brand/artisan-process.png" alt="Artisan hand shaping pipe-cleaner flower" />
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="eyebrow">The Studio Philosophy</span>
+        <h2>Made slowly.<br /><em>Given wholeheartedly.</em></h2>
+        <p class="about-lead">
+          Vedora began with a simple thought: what if a bouquet could be more than a fleeting moment?
+        </p>
+        <p class="about-body">
+          Each handmade bloom is shaped stem by stem, with room for color, personality, and the tiny details that make a gift truly personal. Using plush chenille wire, we form velvety petals that hold their shape indefinitely. No wilting, no dropped petals, and no goodbye.
+        </p>
+        <div class="features-list">
+          <div class="feature-row">
+            <span class="feature-icon">🌿</span>
+            <div>
+              <h4>Everlasting Craft</h4>
+              <p>Timeless flowers that stay vibrant across seasons and years.</p>
+            </div>
+          </div>
+          <div class="feature-row">
+            <span class="feature-icon">✨</span>
+            <div>
+              <h4>100% Hand-Sculpted</h4>
+              <p>Every petal, stamen, and leaf formed by human hands in our studio.</p>
+            </div>
+          </div>
+          <div class="feature-row">
+            <span class="feature-icon">💌</span>
+            <div>
+              <h4>Thoughtfully Wrapped</h4>
+              <p>Dressed in literary newsprint or delicate organza ribbons, ready to gift.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Orders Banner -->
+  <section class="custom-banner">
+    <div class="container custom-grid">
+      <div class="custom-text">
+        <span class="eyebrow">Bespoke Gifting</span>
+        <h2>Tell us the feeling.<br />We'll find the flowers.</h2>
+        <p>Something for your best friend? A little thank-you? A bouquet that feels like a tiny piece of someone? Choose your flowers, colors, wrapping, and little extras to make something entirely yours.</p>
+        <a href="#contact" class="btn btn-primary">Create Your Own Bouquet</a>
+      </div>
+      <div class="custom-visual">
+        <img src="https://lively-bunny-a1bd05.netlify.app/images/custom-bouquets/custom-lily-stem.png" alt="Custom floral arrangement stem" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Forest Landscape -->
+  <footer id="contact" class="site-footer">
+    
+    <!-- Forest Landscape Illustration -->
+    <div class="footer-forest-wrap" aria-hidden="true">
+      <svg class="footer-forest-svg" viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Layer 1: Distant Misty Rolling Hills -->
+        <path d="M0,220 L0,120 Q180,60 360,110 T720,80 T1080,120 T1440,70 L1440,220 Z" fill="#E8DEC8" opacity="0.6" />
+        
+        <!-- Layer 2: Midground Gentle Slopes -->
+        <path d="M0,220 L0,150 Q240,110 480,145 T960,125 T1440,140 L1440,220 Z" fill="#DED2B9" opacity="0.8" />
+        
+        <!-- Layer 3: Foreground Ground Line -->
+        <path d="M0,220 L0,185 Q360,170 720,180 T1440,175 L1440,220 Z" fill="#D4C6AA" opacity="1" />
+        
+        <!-- Layer 4: Minimalist Pine Tree Silhouettes -->
+        <g fill="#0A3323" opacity="0.18">
+          <!-- Tree Cluster 1 -->
+          <polygon points="60,195 75,130 90,195" />
+          <polygon points="66,165 75,120 84,165" />
+          <polygon points="95,200 108,145 121,200" />
+          
+          <!-- Tree Cluster 2 -->
+          <polygon points="260,190 280,115 300,190" />
+          <polygon points="270,150 280,95 290,150" />
+          <polygon points="305,195 320,135 335,195" />
+          
+          <!-- Tree Cluster 3 (Tall majestic pines) -->
+          <polygon points="580,188 605,95 630,188" />
+          <polygon points="590,140 605,75 620,140" />
+          <polygon points="635,192 650,120 665,192" />
+          
+          <!-- Tree Cluster 4 -->
+          <polygon points="860,190 880,125 900,190" />
+          <polygon points="870,155 880,105 890,155" />
+          
+          <!-- Tree Cluster 5 -->
+          <polygon points="1120,188 1145,100 1170,188" />
+          <polygon points="1132,138 1145,82 1158,138" />
+          <polygon points="1175,195 1190,130 1205,195" />
+          
+          <!-- Tree Cluster 6 -->
+          <polygon points="1350,192 1368,125 1386,192" />
+          <polygon points="1358,155 1368,110 1378,155" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <span class="footer-logo">Vedora</span>
+          <p class="footer-tagline">
+            Flowers that are made by hand, given with feeling, and kept as everlasting reminders of moments that matter.
+          </p>
+          <div class="footer-badge">Studio Demo • Handcrafted Floral Art</div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="#collection">All Creations</a></li>
+            <li><a href="#collection" onclick="filterCategory('small')">Small Bouquets</a></li>
+            <li><a href="#collection" onclick="filterCategory('medium')">Medium Bouquets</a></li>
+            <li><a href="#collection" onclick="filterCategory('large')">Large Bouquets</a></li>
+            <li><a href="#collection" onclick="filterCategory('keychain')">Cute Keychains</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Studio Story</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Our Craft</a></li>
+            <li><a href="#fotm">Flower of the Month</a></li>
+            <li><a href="#custom">Custom Commissions</a></li>
+            <li><a href="#contact">Contact the Studio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Say Hello</h4>
+          <p class="footer-text">
+            Have a question or custom vision? We'd love to chat.
+          </p>
+          <a href="mailto:hello@vedorastudio.demo" class="footer-contact-link">hello@vedorastudio.demo</a>
+          <div class="footer-socials">
+            <span>Instagram</span> • <span>TikTok</span> • <span>Pinterest</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Vedora Studio. Handcrafted petal by petal with velvety chenille wire.</div>
+        <div>Designed with minimal warmth &amp; botanical care.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
